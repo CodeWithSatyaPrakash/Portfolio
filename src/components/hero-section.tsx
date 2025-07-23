@@ -60,12 +60,12 @@ export function HeroSection() {
         </div>
         <div className="hidden md:block">
             <Image 
-                src="https://placehold.co/600x600.png"
+                src="https://placehold.co/600x600/000000/FFFFFF.png"
                 width={600}
                 height={600}
                 alt="AI illustration"
                 data-ai-hint="ai developer"
-                className="animate-[float_5s_ease-in-out_infinite]"
+                className="animate-[float_5s_ease-in-out_infinite] rounded-lg shadow-2xl shadow-primary/30"
             />
         </div>
       </div>
