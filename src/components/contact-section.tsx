@@ -8,17 +8,17 @@ const socialLinks = [
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/satyapmohanty",
+      url: "https://github.com/CodeWithSatyaPrakash",
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://linkedin.com/in/satyapmohanty",
+      url: "https://www.linkedin.com/in/satya-prakash-mohanty-343496257",
     },
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:satyapmohanty@example.com",
+      url: "mailto:satyaprakashmohanty97@gmail.com",
     },
   ];
 
@@ -40,9 +40,9 @@ export function ContactSection() {
                     Feel free to reach out via email or connect with me on social media.
                 </p>
                 <div className="flex flex-col space-y-4">
-                     <a href="mailto:satyapmohanty@example.com" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors">
+                     <a href="mailto:satyaprakashmohanty97@gmail.com" className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors">
                         <Mail />
-                        <span>satyapmohanty@example.com</span>
+                        <span>satyaprakashmohanty97@gmail.com</span>
                     </a>
                     <div className="flex space-x-4 pt-4">
                         {socialLinks.map((link) => (

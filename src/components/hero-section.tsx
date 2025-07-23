@@ -7,17 +7,17 @@ const socialLinks = [
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/satyapmohanty",
+      url: "https://github.com/CodeWithSatyaPrakash",
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://linkedin.com/in/satyapmohanty",
+      url: "https://www.linkedin.com/in/satya-prakash-mohanty-343496257",
     },
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:satyapmohanty@example.com",
+      url: "mailto:satyaprakashmohanty97@gmail.com",
     },
   ];
 
@@ -40,7 +40,7 @@ export function HeroSection() {
                     <Link href="#projects">View My Projects <ArrowRight className="ml-2" /></Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
-                    <a href="mailto:satyapmohanty@example.com">Contact Me <Mail className="ml-2" /></a>
+                    <a href="mailto:satyaprakashmohanty97@gmail.com">Contact Me <Mail className="ml-2" /></a>
                 </Button>
             </div>
             <div className="flex justify-center md:justify-start space-x-4 pt-4">
