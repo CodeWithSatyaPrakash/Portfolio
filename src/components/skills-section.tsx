@@ -1,3 +1,4 @@
+
 "use client"
 
 import React from "react"
@@ -35,18 +36,22 @@ const skillCategories = [
 
 const CustomPolarAngleAxisTick = (props: any) => {
     const { payload, x, y, cx, cy, ...rest } = props;
+    const words = payload.value.split(' ');
+    
+    // Adjust positioning to give more space
+    const newX = x + (x - cx) / 8;
+    const newY = y + (y - cy) / 8;
+
     return (
-      <Text
-        {...rest}
-        verticalAnchor="middle"
-        y={y + (y - cy) / 12}
-        x={x + (x - cx) / 12}
-        className="fill-foreground text-xs"
-      >
-        {payload.value}
-      </Text>
+      <g transform={`translate(${newX},${newY})`}>
+        <text {...rest} y={0} x={0} textAnchor="middle" className="fill-foreground text-xs">
+          {words.map((word: string, i: number) => (
+            <tspan key={i} x={0} dy={i === 0 ? '0' : '1.2em'}>{word}</tspan>
+          ))}
+        </text>
+      </g>
     );
-  };
+};
 
 
 export function SkillsSection() {
@@ -67,7 +72,7 @@ export function SkillsSection() {
             </CardHeader>
             <CardContent className="h-[400px]">
               <ResponsiveContainer width="100%" height="100%">
-                <RadarChart cx="50%" cy="50%" outerRadius="70%" data={proficiencyData}>
+                <RadarChart cx="50%" cy="50%" outerRadius="65%" data={proficiencyData}>
                   <defs>
                     <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
                       <stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.8}/>
