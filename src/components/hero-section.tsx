@@ -60,11 +60,11 @@ export function HeroSection() {
         </div>
         <div className="hidden md:block">
             <Image 
-                src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=2106&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1690992049876-133335de21a1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 width={600}
                 height={600}
-                alt="Data Scientist working on multiple computers"
-                data-ai-hint="developer multiple monitors"
+                alt="AI avatar of a person working in front of multiple computers"
+                data-ai-hint="ai avatar computers"
                 className="animate-[float_5s_ease-in-out_infinite] rounded-lg shadow-2xl shadow-primary/30"
             />
         </div>
