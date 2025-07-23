@@ -8,7 +8,7 @@ export function Footer() {
           &copy; {new Date().getFullYear()} Satya Prakash Mohanty. All rights reserved.
         </p>
         <p className="text-sm text-muted-foreground">
-          Built with <span className="text-primary">AI</span> and a bit of code.
+          Learn and grow
         </p>
         <Link href="#hero" className="text-sm text-muted-foreground hover:text-primary transition-colors">
           Back to Top &uarr;
