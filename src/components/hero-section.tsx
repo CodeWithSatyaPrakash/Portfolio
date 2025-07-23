@@ -69,13 +69,6 @@ export function HeroSection() {
             />
         </div>
       </div>
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20">
-        <a href="#projects" aria-label="Scroll to projects">
-          <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center items-start p-1">
-            <div className="w-1 h-2 bg-primary rounded-full animate-bounce"></div>
-          </div>
-        </a>
-      </div>
     </section>
   );
 }
