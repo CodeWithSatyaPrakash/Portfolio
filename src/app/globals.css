@@ -27,25 +27,25 @@
   }
 
   .dark {
-    --background: 220 20% 6%; /* Near-black with a blue tint */
+    --background: 224 71.4% 4.1%;
     --foreground: 210 40% 98%;
-    --card: 220 20% 10%;
+    --card: 224 71.4% 4.1%;
     --card-foreground: 210 40% 98%;
-    --popover: 220 20% 8%;
+    --popover: 224 71.4% 4.1%;
     --popover-foreground: 210 40% 98%;
-    --primary: 210 90% 60%; /* Vibrant Blue */
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
+    --primary: 218.3 92.2% 56.9%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 215 27.9% 16.9%;
     --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 210 90% 50%; /* Slightly darker blue for accents */
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 27.9% 16.9%;
     --accent-foreground: 210 40% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 220 20% 15%;
-    --input: 220 20% 15%;
-    --ring: 210 90% 60%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 218.3 92.2% 56.9%;
   }
 }
 
@@ -94,3 +94,12 @@
 .animate-fadeIn {
   animation: fadeIn 1s ease-out forwards;
 }
+
+.grid-bg {
+    background-image:
+        linear-gradient(to right, hsl(var(--primary) / 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, hsl(var(--primary) / 0.1) 1px, transparent 1px);
+    background-size: 3rem 3rem;
+    background-position: center center;
+}
+
