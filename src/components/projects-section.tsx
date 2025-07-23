@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Disease Prediction Using Health Data",
     description: "Developed ML models to predict diabetes and heart disease risk from patient metrics. Focused on classification accuracy and model interpretability.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3J8ZW58MHx8fHwxNzUzMjc3NzkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
     tags: ["Logistic Regression", "Random Forest", "AUC/Recall"],
     dataAiHint: "health data",
   },
