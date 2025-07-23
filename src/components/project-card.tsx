@@ -10,6 +10,7 @@ import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, A
 import { Github, PlayCircle, X } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { ScrollArea } from "./ui/scroll-area";
 
 type ProjectCardProps = {
   title: string;
@@ -102,62 +103,65 @@ export function ProjectCard({ title, description, image, tags, dataAiHint, modal
 
       <AlertDialog open={isModalOpen} onOpenChange={setIsModalOpen}>
         <AlertDialogContent 
-          className="glassmorphism max-w-3xl p-8 rounded-[1rem]"
+          className="glassmorphism max-w-3xl w-[95vw] max-h-[90vh] p-0 rounded-[1rem] flex flex-col"
         >
-           <button onClick={() => setIsModalOpen(false)} className="absolute top-4 right-4 text-primary hover:text-primary/80 transition-colors glow-close-icon z-10">
+           <button onClick={() => setIsModalOpen(false)} className="absolute top-4 right-4 text-primary hover:text-primary/80 transition-colors glow-close-icon z-20">
                 <X />
             </button>
-
-            <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
-                    <AlertDialogHeader>
-                        <AlertDialogTitle className="text-3xl font-bold font-headline text-primary">{title}</AlertDialogTitle>
-                    </AlertDialogHeader>
-                    <Image 
-                        src={modalImage}
-                        alt={title}
-                        width={800}
-                        height={600}
-                        className="rounded-lg object-cover aspect-video"
-                        data-ai-hint={modalDataAiHint}
-                    />
-                </div>
-                <div className="space-y-4">
-                     <div className="prose prose-invert text-muted-foreground text-base">
-                        <p>{modalDescription}</p>
+            <ScrollArea className="flex-1">
+              <div className="p-8">
+                <div className="grid md:grid-cols-2 gap-8">
+                    <div className="space-y-4">
+                        <AlertDialogHeader>
+                            <AlertDialogTitle className="text-3xl font-bold font-headline text-primary">{title}</AlertDialogTitle>
+                        </AlertDialogHeader>
+                        <Image 
+                            src={modalImage}
+                            alt={title}
+                            width={800}
+                            height={600}
+                            className="rounded-lg object-cover aspect-video"
+                            data-ai-hint={modalDataAiHint}
+                        />
                     </div>
+                    <div className="space-y-4">
+                         <div className="prose prose-invert text-muted-foreground text-base">
+                            <p>{modalDescription}</p>
+                        </div>
 
-                    <div>
-                        <h4 className="font-bold text-lg mb-2 text-primary">Key Features:</h4>
-                        <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                        {features.map((feature, i) => <li key={i}>{feature}</li>)}
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 className="font-bold text-lg mb-2 text-primary">Technologies Used:</h4>
-                        <div className="flex flex-wrap gap-2">
-                            {tags.map((tag) => (
-                            <Badge key={tag} variant="secondary" className="font-code bg-primary/10 text-primary border border-primary/20">
-                                {tag}
-                            </Badge>
-                            ))}
+                        <div>
+                            <h4 className="font-bold text-lg mb-2 text-primary">Key Features:</h4>
+                            <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                            {features.map((feature, i) => <li key={i}>{feature}</li>)}
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 className="font-bold text-lg mb-2 text-primary">Technologies Used:</h4>
+                            <div className="flex flex-wrap gap-2">
+                                {tags.map((tag) => (
+                                <Badge key={tag} variant="secondary" className="font-code bg-primary/10 text-primary border border-primary/20">
+                                    {tag}
+                                </Badge>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-          
-          <AlertDialogFooter className="mt-4">
-             {githubUrl && (
-              <Button asChild>
-                <Link href={githubUrl} target="_blank"><Github className="mr-2" /> View Code</Link>
-              </Button>
-            )}
-            {demoUrl && (
-              <Button asChild variant="secondary">
-                <Link href={demoUrl} target="_blank"><PlayCircle className="mr-2" /> View Demo</Link>
-              </Button>
-            )}
-          </AlertDialogFooter>
+              
+                <AlertDialogFooter className="mt-8 pt-6 border-t border-primary/20">
+                   {githubUrl && (
+                    <Button asChild>
+                      <Link href={githubUrl} target="_blank"><Github className="mr-2" /> View Code</Link>
+                    </Button>
+                  )}
+                  {demoUrl && (
+                    <Button asChild variant="secondary">
+                      <Link href={demoUrl} target="_blank"><PlayCircle className="mr-2" /> View Demo</Link>
+                    </Button>
+                  )}
+                </AlertDialogFooter>
+              </div>
+            </ScrollArea>
         </AlertDialogContent>
       </AlertDialog>
     </>
