@@ -6,14 +6,12 @@ const certifications = [
   {
     title: "Python for Data Science, AI and Development",
     issuer: "IBM",
-    // Placeholder link, user should update with actual certificate URL
-    url: "#",
+    url: "https://www.coursera.org/account/accomplishments/verify/DVX34TGLNYKW",
   },
   {
     title: "Machine Learning Specialization",
     issuer: "DeepLearning.AI",
-    // Placeholder link, user should update with actual certificate URL
-    url: "#",
+    url: "https://www.coursera.org/account/accomplishments/specialization/AX52X2WU142U",
   },
 ];
 
