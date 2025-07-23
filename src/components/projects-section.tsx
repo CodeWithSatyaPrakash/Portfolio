@@ -18,14 +18,14 @@ const projects = [
   {
     title: "Titanic Survival Predictor",
     description: "A classic data science project involving exploratory data analysis (EDA) and building predictive models to determine passenger survival.",
-    image: "https://images.unsplash.com/photo-1542317851-66518448737a?q=80&w=1983&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1590497003138-8d7293c39a85?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags: ["EDA", "Decision Trees", "Model Evaluation"],
     dataAiHint: "titanic ship",
   },
   {
     title: "Movie Recommendation Engine",
     description: "Built a content-based recommendation system using NLP techniques to suggest movies based on plot summaries and genres.",
-    image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=2059&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags: ["TF-IDF", "Cosine Similarity", "NLP"],
     dataAiHint: "movie clapperboard",
   },
