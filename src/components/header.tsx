@@ -8,7 +8,7 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="font-bold text-lg font-headline text-primary">Satya's AI Canvas</span>
+            <span className="font-bold text-lg font-headline text-primary">Satya's Portfolio</span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <Link href="#hero" className="transition-colors hover:text-primary">Home</Link>
