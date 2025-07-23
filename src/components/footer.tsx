@@ -10,8 +10,8 @@ export function Footer() {
         <p className="text-sm text-muted-foreground">
           Learn and grow
         </p>
-        <Link href="#hero" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-          Back to Top &uarr;
+        <Link href="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+          /home
         </Link>
       </div>
     </footer>
