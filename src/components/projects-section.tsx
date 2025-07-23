@@ -7,7 +7,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3J8ZW58MHx8fHwxNzUzMjc3NzkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
     tags: ["Python", "pandas", "scikit-learn", "Logistic Regression", "Random Forest", "Data Visualization"],
     dataAiHint: "health data",
-    modalImage: "https://images.unsplash.com/photo-1576091160550-2173dba9996a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoZWFsdGglMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzUzMjc5MjI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    modalImage: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb2N0b3J8ZW58MHx8fHwxNzUzMjc3NzkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
     modalDataAiHint: "health dashboard",
     modalDescription: "This project focuses on predicting diabetes and heart disease risk using patient health metrics. I implemented multiple machine learning models including Logistic Regression and Random Forest to achieve high accuracy in predictions.",
     features: [
