@@ -37,7 +37,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1590880449155-b54f958ce314?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8c2hpcHxlbnwwfHx8fDE3NTMyNzc2ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     tags: ["EDA", "Decision Trees", "Model Evaluation", "Python", "Pandas"],
     dataAiHint: "ship",
-    modalImage: "https://images.unsplash.com/photo-1612422596484-85cb8b2c2445?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwc2hpcHxlbnwwfHx8fDE3NTMyNzkyODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    modalImage: "https://images.unsplash.com/photo-1463567517034-628c51048aa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzaGlwfGVufDB8fHx8MTc1MzI3NzY4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
     modalDataAiHint: "vintage ship",
     modalDescription: "This project tackles the famous Titanic survival prediction challenge. It involves a comprehensive Exploratory Data Analysis (EDA) to uncover insights from the passenger data, followed by the implementation of various classification models like Logistic Regression and Decision Trees to predict survival outcomes. The focus is on feature engineering, model selection, and evaluation.",
     features: ["Survival prediction modeling", "Exploratory Data Analysis and visualization", "Feature engineering from raw passenger data", "Comparison of different classification models"],
