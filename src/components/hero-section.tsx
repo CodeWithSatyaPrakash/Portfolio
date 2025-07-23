@@ -60,11 +60,11 @@ export function HeroSection() {
         </div>
         <div className="hidden md:block">
             <Image 
-                src="https://storage.googleapis.com/aifirebase-7a130.appspot.com/users%2FwPEiJbLpA4Z2yMNAeRkD%2Fgenerations%2F2f63e6e8-6e5a-4b6a-9f5b-514d7a8d29b0.jpeg?alt=media&token=e11e8605-7729-4c74-9f26-78722a490196"
+                src="https://images.unsplash.com/photo-1638913971873-b6339ea44549?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 width={600}
                 height={600}
-                alt="Satya Prakash Mohanty"
-                data-ai-hint="profile picture"
+                alt="Data Scientist working on multiple computers"
+                data-ai-hint="data scientist computers"
                 className="animate-[float_5s_ease-in-out_infinite] rounded-lg shadow-2xl shadow-primary/30"
             />
         </div>
