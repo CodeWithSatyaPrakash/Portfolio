@@ -15,12 +15,15 @@ type ProjectCardProps = {
   image: string;
   tags: string[];
   dataAiHint: string;
+  modalDescription: string;
+  modalImage: string;
+  modalDataAiHint: string;
   features: string[];
   githubUrl?: string;
   demoUrl?: string;
 };
 
-export function ProjectCard({ title, description, image, tags, dataAiHint, features, githubUrl, demoUrl }: ProjectCardProps) {
+export function ProjectCard({ title, description, image, tags, dataAiHint, modalDescription, modalImage, modalDataAiHint, features, githubUrl, demoUrl }: ProjectCardProps) {
   const cardRef = React.useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -96,34 +99,50 @@ export function ProjectCard({ title, description, image, tags, dataAiHint, featu
       </div>
 
       <AlertDialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-        <AlertDialogContent className="glassmorphism">
-          <AlertDialogHeader>
-            <AlertDialogTitle className="text-2xl font-bold font-headline text-primary">{title}</AlertDialogTitle>
-             <button onClick={() => setIsModalOpen(false)} className="absolute top-4 right-4 text-primary hover:text-primary/80 transition-colors glow-close-icon">
+        <AlertDialogContent className="glassmorphism max-w-3xl p-8">
+           <button onClick={() => setIsModalOpen(false)} className="absolute top-4 right-4 text-primary hover:text-primary/80 transition-colors glow-close-icon z-10">
                 <X />
             </button>
-            <AlertDialogDescription className="pt-2 text-base text-muted-foreground">{description}</AlertDialogDescription>
-          </AlertDialogHeader>
-          
-          <div className="my-4">
-            <h4 className="font-bold text-lg mb-2 text-primary">Features</h4>
-            <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-              {features.map((feature, i) => <li key={i}>{feature}</li>)}
-            </ul>
-          </div>
 
-          <div className="my-4">
-              <h4 className="font-bold text-lg mb-2 text-primary">Skills & Tools</h4>
-              <div className="flex flex-wrap gap-2">
-                {tags.map((tag) => (
-                  <Badge key={tag} variant="secondary" className="font-code bg-primary/10 text-primary border border-primary/20">
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
-          </div>
+            <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                    <AlertDialogHeader>
+                        <AlertDialogTitle className="text-3xl font-bold font-headline text-primary">{title}</AlertDialogTitle>
+                    </AlertDialogHeader>
+                    <Image 
+                        src={modalImage}
+                        alt={title}
+                        width={800}
+                        height={600}
+                        className="rounded-lg object-cover aspect-video"
+                        data-ai-hint={modalDataAiHint}
+                    />
+                </div>
+                <div className="space-y-4">
+                     <div className="prose prose-invert text-muted-foreground text-base">
+                        <p>{modalDescription}</p>
+                    </div>
+
+                    <div>
+                        <h4 className="font-bold text-lg mb-2 text-primary">Key Features:</h4>
+                        <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                        {features.map((feature, i) => <li key={i}>{feature}</li>)}
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="font-bold text-lg mb-2 text-primary">Technologies Used:</h4>
+                        <div className="flex flex-wrap gap-2">
+                            {tags.map((tag) => (
+                            <Badge key={tag} variant="secondary" className="font-code bg-primary/10 text-primary border border-primary/20">
+                                {tag}
+                            </Badge>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
           
-          <AlertDialogFooter>
+          <AlertDialogFooter className="mt-4">
              {githubUrl && (
               <Button asChild>
                 <Link href={githubUrl} target="_blank"><Github className="mr-2" /> View Code</Link>
