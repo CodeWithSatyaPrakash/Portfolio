@@ -1,14 +1,14 @@
 "use client"
 
 import React from "react"
-import { PolarAngleAxis, PolarGrid, Radar, RadarChart, ResponsiveContainer } from "recharts"
+import { PolarAngleAxis, PolarGrid, Radar, RadarChart, ResponsiveContainer, Text } from "recharts"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { Badge } from "@/components/ui/badge"
 
 const proficiencyData = [
   { subject: 'Python', A: 90, fullMark: 100 },
-  { subject: 'Machine Learn', A: 85, fullMark: 100 },
+  { subject: 'Machine Learning', A: 85, fullMark: 100 },
   { subject: 'Data Analysis', A: 88, fullMark: 100 },
   { subject: 'NLP', A: 78, fullMark: 100 },
   { subject: 'Computer Vision', A: 76, fullMark: 100 },
@@ -33,6 +33,21 @@ const skillCategories = [
     }
 ]
 
+const CustomPolarAngleAxisTick = (props: any) => {
+    const { payload, x, y, cx, cy, ...rest } = props;
+    return (
+      <Text
+        {...rest}
+        verticalAnchor="middle"
+        y={y + (y - cy) / 12}
+        x={x + (x - cx) / 12}
+        className="fill-foreground text-xs"
+      >
+        {payload.value}
+      </Text>
+    );
+  };
+
 
 export function SkillsSection() {
   return (
@@ -52,7 +67,7 @@ export function SkillsSection() {
             </CardHeader>
             <CardContent className="h-[400px]">
               <ResponsiveContainer width="100%" height="100%">
-                <RadarChart cx="50%" cy="50%" outerRadius="80%" data={proficiencyData}>
+                <RadarChart cx="50%" cy="50%" outerRadius="70%" data={proficiencyData}>
                   <defs>
                     <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
                       <stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.8}/>
@@ -60,7 +75,7 @@ export function SkillsSection() {
                     </linearGradient>
                   </defs>
                   <PolarGrid stroke="hsl(var(--border))" />
-                  <PolarAngleAxis dataKey="subject" tick={{ fill: 'hsl(var(--foreground))' }} />
+                  <PolarAngleAxis dataKey="subject" tick={<CustomPolarAngleAxisTick />} />
                   <Radar name="Mike" dataKey="A" stroke="hsl(var(--primary))" fill="url(#colorUv)" fillOpacity={0.6} />
                 </RadarChart>
               </ResponsiveContainer>
