@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+import { ThemeToggle } from "./theme-toggle";
 
 export function Header() {
   return (
@@ -21,6 +22,7 @@ export function Header() {
           </nav>
         </div>
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+            <ThemeToggle />
           <Button asChild className="glow-primary-hover shadow-glow-primary">
             <a href="https://drive.google.com/file/d/1GNWhrTaCL03cIKNOSUzw0kWycwEo-DIo/view" target="_blank" rel="noopener noreferrer">
               <Download className="mr-2 h-4 w-4" />

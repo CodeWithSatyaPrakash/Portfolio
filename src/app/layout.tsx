@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import { CursorGlow } from '@/components/cursor-glow';
 import React from 'react';
+import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
   title: "Satya's AI Canvas",
@@ -15,12 +16,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" suppressHydrationWarning>
       <head />
       <body className="font-body antialiased">
-        <CursorGlow />
-        {children}
-        <Toaster />
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+        >
+            <CursorGlow />
+            {children}
+            <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );
