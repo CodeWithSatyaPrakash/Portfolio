@@ -62,6 +62,7 @@ export function ProjectCard({ title, description, image, tags, dataAiHint, modal
         onMouseLeave={handleMouseLeave}
         onMouseEnter={handleMouseEnter}
         className="transition-transform duration-300 ease-out relative group"
+        onClick={() => setIsModalOpen(true)}
       >
         <Card className="h-full overflow-hidden transition-all duration-300 hover:shadow-glow-primary border-transparent hover:border-primary/50 bg-card/50">
           <CardContent className="p-0 relative">
@@ -75,7 +76,6 @@ export function ProjectCard({ title, description, image, tags, dataAiHint, modal
             />
              <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 opacity-0 group-hover:opacity-100 flex items-center justify-center">
                 <Button
-                    onClick={() => setIsModalOpen(true)}
                     className="glow-primary-hover shadow-glow-primary"
                 >
                     View Details
@@ -99,7 +99,10 @@ export function ProjectCard({ title, description, image, tags, dataAiHint, modal
       </div>
 
       <AlertDialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-        <AlertDialogContent className="glassmorphism max-w-3xl p-8 rounded-[1rem]">
+        <AlertDialogContent 
+          className="glassmorphism max-w-3xl p-8 rounded-[1rem]"
+          onEscapeKeyDown={() => setIsModalOpen(false)}
+        >
            <button onClick={() => setIsModalOpen(false)} className="absolute top-4 right-4 text-primary hover:text-primary/80 transition-colors glow-close-icon z-10">
                 <X />
             </button>
