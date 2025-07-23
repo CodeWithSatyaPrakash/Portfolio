@@ -60,7 +60,7 @@ export function HeroSection() {
         </div>
         <div className="hidden md:block">
             <Image 
-                src="https://placehold.co/600x600/000000/FFFFFF.png"
+                src="https://placehold.co/600x600.png"
                 width={600}
                 height={600}
                 alt="AI illustration"
