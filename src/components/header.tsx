@@ -11,6 +11,7 @@ export function Header() {
             <span className="font-bold text-lg font-headline text-primary">Satya's AI Canvas</span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
+            <Link href="#about" className="transition-colors hover:text-primary">About</Link>
             <Link href="#projects" className="transition-colors hover:text-primary">Projects</Link>
             <Link href="#skills" className="transition-colors hover:text-primary">Skills</Link>
             <Link href="#contact" className="transition-colors hover:text-primary">Contact</Link>
