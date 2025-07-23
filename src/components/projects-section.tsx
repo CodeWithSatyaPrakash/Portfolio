@@ -18,7 +18,7 @@ const projects = [
   {
     title: "Titanic Survival Predictor",
     description: "A classic data science project involving exploratory data analysis (EDA) and building predictive models to determine passenger survival.",
-    image: "https://images.unsplash.com/photo-1525110992723-e104331422a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1590880449155-b54f958ce314?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8c2hpcHxlbnwwfHx8fDE3NTMyNzc2ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
     tags: ["EDA", "Decision Trees", "Model Evaluation"],
     dataAiHint: "ship",
   },
