@@ -5,9 +5,10 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Badge } from "@/components/ui/badge";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
-import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogDescription, AlertDialogFooter, AlertDialogAction } from "./ui/alert-dialog";
+import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogDescription, AlertDialogFooter, AlertDialogAction, AlertDialogTrigger, AlertDialogOverlay } from "./ui/alert-dialog";
 import { Github, PlayCircle, X } from "lucide-react";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 type ProjectCardProps = {
   title: string;
