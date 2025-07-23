@@ -99,7 +99,7 @@ export function ProjectCard({ title, description, image, tags, dataAiHint, modal
       </div>
 
       <AlertDialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-        <AlertDialogContent className="glassmorphism max-w-3xl p-8">
+        <AlertDialogContent className="glassmorphism max-w-3xl p-8 rounded-[1rem]">
            <button onClick={() => setIsModalOpen(false)} className="absolute top-4 right-4 text-primary hover:text-primary/80 transition-colors glow-close-icon z-10">
                 <X />
             </button>
