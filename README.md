@@ -25,7 +25,7 @@ This is the personal portfolio of **Satya Prakash Mohanty**, a data science unde
 
 ## 📍 Live Site
 
-👉 [[https://your-vercel-deployment-url.vercel.app](https://satyaprakashmohanty.vercel.app/)](#) 
+👉 [[LINK](https://satyaprakashmohanty.vercel.app/)](#) 
 *(Replace this with your actual deployed URL)*
 
 ---
