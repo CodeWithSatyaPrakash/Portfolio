@@ -26,7 +26,7 @@ This is the personal portfolio of **Satya Prakash Mohanty**, a data science unde
 ## 📍 Live Site
 
 👉 [[LINK](https://satyaprakashmohanty.vercel.app/)](#) 
-*(Replace this with your actual deployed URL)*
+
 
 ---
 
@@ -36,7 +36,7 @@ This is the personal portfolio of **Satya Prakash Mohanty**, a data science unde
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Firebase Studio](https://firebase.google.com/)
 - [Vercel](https://vercel.com/) – Hosting & CI/CD
-- [OpenAI / GPT-4 API](https://openai.com/) – Chatbot logic
+- [GEMINI]((https://gemini.google.com/app)) – Chatbot logic
 
 ---
 
