@@ -1,5 +1,4 @@
-# Firebase Studio
-
-This is a NextJS starter in Firebase Studio.
-
-To get started, take a look at src/app/page.tsx.
+# Satya's Portfolio
+contains all details of satya 
+contains a chatbot for hr to directly ask about satya 
+contains features like light,dark,system theme 
