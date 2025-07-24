@@ -69,7 +69,7 @@ export function ChatbotWidget() {
         isOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
     )}>
         <div className="flex items-center justify-between p-4 border-b">
-            <h3 className="font-bold font-headline text-lg text-primary">Ask Satya AI</h3>
+            <h3 className="font-bold font-headline text-lg text-primary">satyagpt</h3>
             <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
                 <X className="h-5 w-5" />
             </Button>
