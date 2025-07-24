@@ -6,7 +6,7 @@ import React from 'react';
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  title: "Satya's AI Canvas",
+  title: "satyagpt",
   description: "Satya Prakash Mohanty's AI & Data Science Portfolio",
 };
 

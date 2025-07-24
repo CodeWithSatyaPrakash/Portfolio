@@ -17,7 +17,7 @@ type Message = {
 };
 
 const initialMessages: Message[] = [
-    { id: 1, role: 'assistant', content: "Hi! I'm Satya's AI assistant. Ask me anything about his resume, skills, or projects." },
+    { id: 1, role: 'assistant', content: "Hi! I'm satyagpt. Ask me anything about Satya's resume, skills, or projects." },
 ];
 
 export function ChatbotWidget() {
