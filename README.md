@@ -25,7 +25,7 @@ This is the personal portfolio of **Satya Prakash Mohanty**, a data science unde
 
 ## 📍 Live Site
 
-👉 [[LINK](https://satyaprakashmohanty.vercel.app/)]
+👉 [LIVE LINK](https://satyaprakashmohanty.vercel.app/)
 
 
 ---
